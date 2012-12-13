@@ -1,0 +1,15 @@
+body {
+	background-color: #999;
+	
+}
+#workspace {
+	background-color: #FFF;
+	border: 2px solid #666;
+	width: 800px;
+	margin: 0 auto 0 auto;
+	text-align:center;
+}
+#graph {
+	width: 800px;
+	height: 200px;
+}

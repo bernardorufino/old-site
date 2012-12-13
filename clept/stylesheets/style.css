@@ -1,0 +1,319 @@
+/* 1 - Layout */
+
+/* 1.1 - Posicionamento geral */
+
+html {
+	background-color: #DDDDDD;
+	background-image: url(../images/html-bg.gif);
+	background-repeat: repeat-x;
+}
+body {
+	background-image: url(../images/body-bg.gif);
+	background-position: top center;
+	background-repeat: repeat-y;
+	padding: 0px 0px 0px 0px;
+}
+#all {
+	width: 820px;
+	margin: 0px auto 0px auto;
+	background-image: url(../images/all-bg.gif);
+	background-position: top center;
+	background-repeat: no-repeat;
+	/*background-color: #FFFFFF;*/
+}
+#page {
+	width: 800px;
+	margin: 0px auto 0px auto;
+}
+#top {
+	height: 180px;
+	background-image: url(../images/top-bg.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	/*background-color: #0000FF;*/
+}
+#header {
+	float: left;
+	width: 370px;
+	height: 150px;
+	/*background-color: #FF9900;*/
+}
+#nav {
+	float: left;
+	width: 370px;
+	height: 150px;
+	/*background-color: #009900;*/
+}
+#menu {
+	clear: both;
+	height: 50px;
+	background-image: url(../images/menu-bg.gif);
+	background-repeat: repeat-x;
+	/*background-color: #FF0000;*/
+}
+#content {
+	clear: both;
+	padding: 20px;
+	/*background-color: #660099;*/
+}
+#side {
+	width: 200px;
+	float: right;
+}
+#footer {
+	clear: both;
+	height: 130px; /*160(image_height)-30(padding)=130(height)*/
+	margin: 0px -10px 0px -10px;
+	padding: 30px 0px 0px 0px;
+	text-align: center;
+	background-image: url(../images/footer-bg.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	/*background-color: #666666;*/
+}
+#out {
+	background-color: #DDDDDD;
+	text-align: center;
+	padding: 0px 10px 60px 10px;
+}
+#out * {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 1.2 - Formatação para o header, image-replacement */
+
+#header * {
+	display: none;
+}
+
+/* 1.4 - Formatação para o menu geral, que os links */
+
+
+#menu-list, #menu-list li, #menu-list a {
+	height: 50px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#menu-list {
+	background-image: url(../images/menu-bg.gif);
+	background-repeat: repeat-x;
+}
+#menu-list li {
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+#menu-list a, #menu-list a:hover, #menu-list a:visited, #menu-list a:link {
+	float: left;
+	color: #F3F3F3;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 0px 15px 0px 15px;
+}
+#menu-list li:hover {
+	background-image: url(../images/menu-list-li-hover-bg.gif);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+#menu-list li:hover a {
+	color: #81C9FB;
+	text-decoration: underline;
+}
+#menu-list li:active, #menu-list li.active {
+	background-image: url(../images/menu-list-li-active-bg.gif);
+	background-repeat: repeat-x;
+}
+#menu-list li:active a, #menu-list li.active a {
+	background-image: none;
+	color: #2C2C2C;
+}
+
+/* 2 - Tags e estilos diversos, letras fontes etc. */
+
+/* 2.1 - Box estilo etc. */
+
+/* Show only to IE PC \*/
+* html .box .head h3 {
+	height: 1%;
+}
+/* For IE 5 PC */
+
+.box .head * {
+	margin: 0px;
+	padding: 0px;
+}
+.box {
+	background-image: url(../images/box-bottom-right.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.box .head {
+	background-image: url(../images/box-top-right.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	/* min-width: 24px; */
+}
+.box .head h3 {
+	background-image: url(../images/box-top-left.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 13px 0px 0px 17px;
+	height: 40px; /* 60? */
+	/* Now the colors and sizes */
+	font-size: 1.2em;
+	color: #FFFFFF;
+}
+.box .head h3 a {
+	color: #FFFFFF;
+}
+.box .body {
+	background-image: url(../images/box-bottom-left.gif);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	padding: 1px 17px 27px 17px;
+	margin: 0px 0px 0px 0px;
+	min-height: 7px;
+	min-width: 24px;
+}
+
+
+/* 2.1 - Estilo para formulários */
+
+form p {
+	width: 100%;
+	margin: 4px 0px 0px 0px;
+	clear: both;
+}
+form label {
+	display: block;
+	float: left;
+	height: 16px;
+	line-height: 15px;
+	width: 120px;
+	padding: 3px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+input, select, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	line-height: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	font-stretch: normal;
+	border: 1px solid #A5ACB2;
+	vertical-align: middle;
+	background: #FFFFFF url(../images/input.gif) repeat-x bottom;
+	color: #69737C;
+}
+input, select {
+	height: 16px;
+	padding: 2px;
+}
+select {
+	height: 20px;
+}
+select.date {
+	width: auto;
+	padding-right: 2px;
+}
+option {
+	margin: 0px 10px 0px 0px;
+}
+input:focus, select:focus, textarea:focus {
+	background: #FFFFFF url(../images/input-focus.gif) repeat-x top;
+	color: #3F4449;
+}
+input.big, select.big {
+	width: 240px;
+}
+textarea.big {
+	width: 480px;
+	height: 180px;
+}
+input.medium, select.medium, input, select {
+	width: 120px;
+}
+textarea.medium, textarea {
+	width: 240px;
+	height: 120px;
+}
+input.small, select.small {
+	width: 60px;
+}
+textarea.small {
+	width: 125px;
+	height: 90px;
+}
+input.file {
+	width: 220px;
+	height: 20px;
+}
+input[type=hidden] {
+	width: 0px;
+	height: 0px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+	display: none;
+}
+.date-special {
+	display: none;
+}
+
+/* 2.2 - Estilo as tabelas contendo musicas */
+
+.songs, .songs * {
+	margin: 0px;
+	padding: 0px;
+	cursor: default;
+}
+.songs {
+	width: 100%;
+}
+.songs caption {
+	background: #FFFFFF url(../images/grad-black.gif) repeat-x bottom;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px 2px 0px 2px;
+	padding: 4px;
+}
+.songs td, .songs th {
+	padding: 4px;
+}
+.songs tr th {
+	background: #FFFFFF url(../images/grad-blue.gif) repeat-x bottom;
+	color: #FFFFFF;
+}
+.songs tr td {
+	background: #FFFFFF url(../images/grad-gray.gif) repeat-x bottom;
+}
+.songs tr:hover td {
+	background: #FFFFFF url(../images/grad-red.gif) repeat-x bottom;
+	color: #FFFFFF;
+}
+
+
+/* 2.3 - Outros */
+
+img, a img {
+	border: none;
+}
+#work {
+	width: 542px;
+	float: left;
+}
+#sidebar {
+	float: right;
+	width: 200px;
+}
+.box {
+	margin-bottom: 20px;
+}
+.foot {
+	clear: both;
+	float: none;
+}

@@ -1,0 +1,43 @@
+html {
+	background-color: #333333;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#calc {
+	width: 320px;
+	height: 480px;
+	padding: 10px;
+	background-color: #DDDDDD;
+	margin: 10px auto 0px auto;
+	position: relative;
+}
+#workspace {
+	height: 50px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #BBBBBB;
+}
+#results {
+	margin-bottom: 10px;
+	background-color: #CCC;
+	padding: 2px;
+	border: 1px solid #888;
+}
+#measurement {
+	margin-top: 10px;
+}
+#measurement input {
+	width: 80px;
+}
+fieldset {
+	border: 1px solid #9E9E9E;
+	float: left;
+}
+.info {
+	border: 1px solid #9E9E9E;
+	background-color: #EEE;
+	margin: 1px;
+	line-height: 20px;
+	padding: 1px 2px 1px 2px;
+	
+}

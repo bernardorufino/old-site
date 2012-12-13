@@ -1,0 +1,46 @@
+html {
+	background-color: #333333;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#game {
+	width: 640px;
+	height: 480px;
+	background-color: #DDDDDD;
+	margin: 10px auto 0px auto;
+	position: relative;
+}
+#controls {
+	position: absolute;
+	background-color: #DDDDDD;
+	width: 481px;
+	height: 132px;
+	top: 328px;
+	left: 9px;
+	padding: 5px;
+	border-top: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+	
+}
+#workarea {
+	margin: 9px;
+	width: 620px;
+	height: 460px;
+	background-color: #FFFFFF;
+	border: 1px solid #BBBBBB;
+}
+.obstacle {
+	background-color: #5555EE;
+}
+fieldset {
+	border: 1px solid #9E9E9E;
+	float: left;
+}
+.info {
+	border: 1px solid #9E9E9E;
+	background-color: #EEE;
+	margin: 1px;
+	line-height: 20px;
+	padding: 1px 2px 1px 2px;
+	
+}

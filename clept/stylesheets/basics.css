@@ -1,0 +1,206 @@
+@CHARSET "ISO-8859-1";
+/*
+
+  Palavras Chave a procurar para mudar:
+
+  [!fonte-size!] - Tamanho da fonte
+  [!fonte-tipo!] - Tipo da Fonte
+  [!form-size!] - Tamanho da fonte dos forms
+  [!button-cor!] - Cor de cada Botão
+  [!fonte-cor!] - Cor da Fonte
+  [!link-cor!] - Cor dos links
+  [!codein-cor!] - Cor de Código Inline
+  [!codebox-cor!] - Cor de Código em Box
+  [!code-size!] - Tamanho do Código
+  [!hn-size!] - Tamanho dos Headings, aonde
+  				"n" é um número de 1 a 6
+  [!hn-color!] - Cor dos Headings, não
+  				 substitua o "n"
+  [!div-global!] - Substitua pelo id da       <--- Substitua
+  				   <div> que englova o site
+
+ */
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Tipografia e posicionamento de texto */
+
+body {
+	/*[!fonte-tipo!]*/
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+	/*[!fonte-cor!]*/
+	color: #333333;
+}
+/*[!div-global!]*/
+#all {
+	/*[!fonte-size!]*/
+	font-size: 1.1em;
+}
+a {
+	text-decoration: none;
+}
+a, a:link {
+	/*[!link-cor!]*/
+	color: #0066CC;
+}
+a:hover {
+	/*[!link-cor!]*/
+	color: #114477;
+}
+a:active {
+	/*[!link-cor!]*/
+	color: #D84949;
+}
+a:visited {
+	/*[!link-cor!]*/
+	color: #D84949;
+}
+/*a[href^="http:"] {
+	padding-right:14px;
+	background: transparent url() no-repeat right center;
+}
+a[href^="http:"], a[href^="http:"]:link {
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/link.gif);
+}
+a[href^="http:"]:hover {
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/link-over.gif);
+}
+a[href^="http:"]:visited {
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/link-visited.gif);
+}*/
+abbr, acronym {
+	cursor: help;
+	color: #667793;
+}
+code {
+	font-family: 'Courier New', Courier, Fixed;
+	/*[!code-size!]*/
+	font-size: 1.0em;
+	/*[!codein-cor!]*/
+	color: #4477B5;
+	background-color: #FBFDFD;
+	border: 1px solid #4477B5;
+	line-height: 1.4em;
+	padding: 0px 2px 0px 2px;
+}
+button {
+	margin: 0px 2px 0px 2px;
+	padding: 2px 3px 2px 3px;
+}
+p {
+	margin: 4px 0px 4px 0px;
+	padding: 4px 0px 4px 0px;
+}
+blockquote, pre, ul, ol, dl {
+	margin: 4px 0px 4px 20px;
+	padding: 2px 0px 2px 5px;
+}
+blockquote, pre.code, pre {
+	border-left: 5px solid #B5C0CE;
+	width: 80%;
+}
+pre.code, pre {
+	/*[!codebox-cor!]*/
+	color: #2E3C4B;
+	/*[!codebox-tipo!]*/
+	font-family: "Courier New", Courier, mono;
+	/*[!code-size!]*/
+	font-size: 1.0em;
+	line-height: 1.0em;
+	overflow: auto;
+}
+pre code {
+	/*[!codebox-cor!]*/
+	color: #2E3C4B;
+	border: 0px;
+	background: transparent;
+	line-height: 1.0em;
+}
+ol li, ul li {
+	margin: 2px 0px 0px 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 2px 0px 2px 0px;
+	padding: 2px 0px 2px 0px;
+	/*[!hn-color!]*/
+	color: #0B4282;
+}
+h1 {
+	/*[!h1-size!]*/
+	font-size: 2.6em;
+}
+h2 {
+	/*[!h2-size!]*/
+	font-size: 2.2em;
+}
+h3 {
+	/*[!h3-size!]*/
+	font-size: 2em;
+}
+h4 {
+	/*[!h4-size!]*/
+	font-size: 1.8em;
+}
+h5 {
+	/*[!h5-size!]*/
+	font-size: 1.6em;
+}
+h6 {
+	/*[!h6-size!]*/
+	font-size: 1.4em;
+}
+.left {
+	display: block;
+	float: left;
+}
+.right {
+	display: block;
+	float: right;
+}
+.left-align {
+	display: inline;
+	text-align: left;
+}
+.right-align {
+	display: inline;
+	text-align: right;
+}
+
+
+/* Mensagens flash de alerta, notícia, informação e erro */
+
+p.flash-notice, p.flash-info, p.flash-warning, p.flash-error {
+	font-weight: bold;
+	padding: 6px 6px 6px 36px;
+	background: #FFFFFF url() no-repeat 5px center;
+	border: 2px solid #FFFFFF;
+}
+p.flash-notice {
+	color: #1F781B;
+	border-color: #1F781B;
+	background-color: #C4F5BC;
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/notice1small.gif);
+}
+p.flash-info {
+	color: #173480;
+	border-color: #173480;
+	background-color: #B8D6FA;
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/info1small.gif);
+}
+p.flash-warning {
+	color: #786207;
+	border-color: #786207;
+	background-color: #F8EDA5;
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/warning1small.gif);
+}
+p.flash-error {
+	color: #9F0B0F;
+	border-color: #9F0B0F;
+	background-color: #F9B7B7;
+	background-image: url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/error1small.gif);
+}

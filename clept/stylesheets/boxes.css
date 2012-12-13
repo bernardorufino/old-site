@@ -1,0 +1,82 @@
+/* Begin Design Boxes */
+
+div.box, div.box-blue, div.box-red, div.box-green, div.box-yellow, div.box-brown, div.box-gray {
+	border: 1px solid #9E9E9E;
+	outline: 3px solid #DCDFE2;
+	margin: 8px; padding: 0px;
+}
+div.box .box-header, div.box-blue .box-header, div.box-red .box-header, 
+div.box-green .box-header, div.box-yellow .box-header, div.box-brown .box-header, div.box-gray .box-header {
+	height: 20px;
+	color: #FFFFFF;
+	text-indent: 5px;
+	font: normal normal bold 11px/18px Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	background: #9E9E9E url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/box-bgs/gray.gif) repeat-x;
+	margin: 0px; padding: 0px;
+}
+div.box .box-content, div.box-blue .box-content, div.box-red .box-content, 
+div.box-green .box-content, div.box-yellow .box-content, div.box-brown .box-content, div.box-gray .box-content {
+	margin: 0px; padding: 10px;
+	background-color: #F8F9FA;
+}
+/* Begin Blue Box Design */
+div.box-blue {
+	border-color: #4E8EE2;
+}
+div.box-blue .box-header {
+	border-color: #A7D0F6;
+	background: #4E8EE2 url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/box-bgs/blue.gif)
+}
+div.box-blue .box-content {
+	background-color: #F3F9FE;
+}
+/* End Blue Box Design *//* Begin Red Box Design */
+div.box-red {
+	border-color: #E2584E;
+}
+div.box-red .box-header {
+	border-color: #F6A7A8;
+	background: #E2584E url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/box-bgs/red.gif)
+}
+div.box-red .box-content {
+	background-color: #FFF8F8;
+}
+/* End Red Box Design *//* Begin Yellow Box Design */
+div.box-yellow {
+	border-color: #E89D08;
+}
+div.box-yellow .box-header {
+	color: #7D4F00;
+	border-color: #FBE755;
+	background: #E89D08 url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/box-bgs/yellow.gif)
+}
+div.box-yellow .box-content {
+	background-color: #FFFDEC;
+}
+/* End Yellow Box Design *//* Begin Green Box Design */
+div.box-green {
+	border-color: #66B161;
+}
+div.box-green .box-header {
+	border-color: #ABCFA5;
+	background: #66B161 url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/box-bgs/green.gif)
+}
+div.box-green .box-content {
+	background-color: #F7FAF5;
+}
+/* End Green Box Design *//* Begin Brown Box Design */
+div.box-brown {
+	border-color: #E2904E;
+}
+div.box-brown .box-header {
+	border-color: #F6C4A7;
+	background: #E2904E url(http://i85.photobucket.com/albums/k43/bermonruf/sites_images/box-bgs/brown.gif)
+}
+div.box-brown .box-content {
+	background-color: #FEF7F1;
+}
+/* End Brown Box Design */
+
+/* End Design Boxes */
